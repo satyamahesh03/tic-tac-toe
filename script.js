@@ -83,6 +83,12 @@ let checkwinner = () => {
             }
         }
     }
+
+    if (count === 9) {
+        gameDraw();
+        return true; // Indicate the game has ended
+    }
+    
     return false;
 }
 
