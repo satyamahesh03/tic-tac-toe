@@ -1,15 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #ECEBDE;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
-.container{
+.container {
+    margin-top: 20px;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -17,7 +18,7 @@ body{
 
 }
 
-.outer-box{
+.outer-box {
     height: 60vh;
     width: 60vh;
     display: flex;
@@ -27,7 +28,7 @@ body{
     gap: 1vmin;
 }
 
-.box{
+.box {
     height: 18vh;
     width: 18vh;
     margin-left: 8px;
@@ -37,7 +38,7 @@ body{
     font-size: 5rem;
 }
 
-#reset-btn, #newgame-btn{
+#reset-btn,#newgame-btn {
     padding: 1rem;
     margin: 10px;
     border: none;
@@ -45,10 +46,41 @@ body{
     color: #F4EDD3;
 }
 
-.hidden-one{
+.hidden-one {
     display: none;
 }
 
-h1{
+h1 {
     color: #4C585B;
+}
+
+@media (max-width: 550px) and (max-height: 950px) {
+
+    .container{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .outer-box {
+        height: 40vh;
+        width: 40vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5vmin;
+    }
+
+    .box {
+        height: 11vh;
+        width: 11vh;
+        margin-left: 8px;
+        background-color: #C1BAA1;
+        border: none;
+        border-radius: 1rem;
+        font-size: 2.5rem;
+    }
 }
